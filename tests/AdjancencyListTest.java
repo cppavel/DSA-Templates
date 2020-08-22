@@ -1,6 +1,6 @@
 package com.company.tests;
 
-import com.company.representations.AdjacencyList;
+import com.company.graphRepresentations.AdjacencyList;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
