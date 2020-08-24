@@ -9,17 +9,19 @@ public class AdjacencyList
 {
     private int numberOfVerticies;
     private ArrayList<ArrayList<Edge>> adjacencyList;
-    private ArrayList<Vertex> vertices;
+    public ArrayList<Vertex> vertices;
 
     public AdjacencyList(int numberOfVertices)
     {
         this.numberOfVerticies = numberOfVertices;
         adjacencyList = new ArrayList<>();
+        vertices = new ArrayList<>(numberOfVertices);
         for(int i = 0; i< numberOfVertices;i++)
         {
             adjacencyList.add(new ArrayList<>());
+            vertices.add(new Vertex());
         }
-        vertices = new ArrayList<>(numberOfVertices);
+
     }
 
     public void addEdge(int u, int v, int w)
