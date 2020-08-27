@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class AdjacencyList
 {
     private int numberOfVerticies;
-    private ArrayList<ArrayList<Edge>> adjacencyList;
+    public ArrayList<ArrayList<Edge>> adjacencyList;
     public ArrayList<Vertex> vertices;
 
     public AdjacencyList(int numberOfVertices)
@@ -66,5 +66,11 @@ public class AdjacencyList
     }
 
 
+    public int getNumberOfVerticies() {
+        return numberOfVerticies;
+    }
 
+    public void setNumberOfVerticies(int numberOfVerticies) {
+        this.numberOfVerticies = numberOfVerticies;
+    }
 }

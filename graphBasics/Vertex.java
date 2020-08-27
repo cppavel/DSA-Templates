@@ -17,9 +17,9 @@ public class Vertex
         attributes.remove(key);
     }
 
-    public void getAttribute(String key)
+    public String getAttribute(String key)
     {
-        attributes.get(key);
+        return attributes.get(key);
     }
 
 

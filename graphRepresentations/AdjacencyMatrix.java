@@ -9,7 +9,7 @@ public class AdjacencyMatrix
 {
     private int numberOfVerticies;
     public ArrayList<Vertex> vertices;
-    private Edge[][] matrix;
+    public Edge[][] matrix;
 
     public AdjacencyMatrix(int numberOfVerticies)
     {
@@ -42,5 +42,11 @@ public class AdjacencyMatrix
     }
 
 
+    public int getNumberOfVerticies() {
+        return numberOfVerticies;
+    }
 
+    public void setNumberOfVerticies(int numberOfVerticies) {
+        this.numberOfVerticies = numberOfVerticies;
+    }
 }
