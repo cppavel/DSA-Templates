@@ -54,4 +54,23 @@ public class BFS
             }
 
     }
+
+    public static void getPath(AdjacencyList adj, ArrayList<Integer> path, int source, int destination)
+    {
+        breadthFirstSearch(adj, source);
+        if (destination == source)
+        {
+            path.add(source);
+        }
+        else if (adj.vertices.get(destination).getAttribute("parent").equals("none"))
+        {
+            path = null;
+        }
+        else
+        {
+            getPath(adj, path, source, Integer.valueOf(adj.vertices.get(destination).getAttribute("parent")));
+            path.add(destination);
+        }
+
+    }
 }
