@@ -12,6 +12,6 @@
  
  2. Heapsort
  
-  -Heapsort is inplace, but because of the specifics of heap storage in memory is not cache-effecient. 
+  -Heapsort is inplace, but because of the specifics of heap storage in memory is not cache-efficient. 
   -Heapsort is not stable
   
