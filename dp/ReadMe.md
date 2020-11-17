@@ -1,9 +1,25 @@
 Basic dp problems + approximate solutions of some NP-complete problems
 
-1. NP-complete - every problem in class NP can be reduced to it and there exists a non-deterministic algorithm
-2. NP-hard - any problem in NP can be reduced to it. 
-3. NP - polynomial time with non-deterministic algorithm
-4. P - polynomial time with deterministic algorithm
+1. NP-complete - every problem in class NP can be reduced to it and there exists a non-deterministic algorithm :t
+2. NP-hard - any problem in NP can be reduced to it. :Hamilaton graph ,Traver sailing person question
+3. NP - polynomial time with non-deterministic algorithm ,
+4. P - polynomial time with deterministic algorithm : Dp ,greedy..
+
+In competitive programming like (ACM-ICPC,or google kickstart),there is time limit for C++ or java
+
+The first n<=100,that is description of input ; the O(N^3) is upper bound algorithm we could use ; the third part is corrspnonding algorithm 
+when N <= 30,in this case, the number of input is very small,we could us dfs+pruning its' brach or using 
+state compression dp
+
+When n <=100 => O(n^3) floyd-warshall in graph theory ,dp
+When n <=1000=> O(n^2) O(n^2log(n)  DP or binary search 
+When n <=10000 => O(n*sqrt(n) Unrolled linklist
+When n <=100000 => O(nlogn) => different kinds of sorting algorithm ,Segment tree,Fenwick tree,set/map,heap,dijkstra+heap,Gramham convex hull
+When n <=1000000 => O(N) => We norammly use the sorting algorithm that contains small constant term !! In this case constant term is important;two pointer ;KMP; Aho Corcisk algorithm 
+When n <=10^7 : two pointer scanning , kmp,aho Corsick algorithm 
+When n <= 10^9 =>O(sqrt(N)judge the prime number
+When n<= 10^18 O(logN) GCD
+
 
 Here is the submission by Mingwei Shi:
 HI Pavel, i have seen your code about one dimension knapsack(every item could be seleted only once)
